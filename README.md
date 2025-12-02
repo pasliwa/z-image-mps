@@ -36,8 +36,9 @@ source zimage-env/bin/activate
 python -m pip install --upgrade pip
 
 pip install torch torchvision torchaudio
-pip install diffusers transformers accelerate safetensors
+pip install transformers accelerate safetensors
 pip install pillow gradio requests
+pip install git+https://github.com/huggingface/diffusers
 ```
 
 If the model is gated on Hugging Face (not at the time of upload):
