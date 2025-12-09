@@ -33,8 +33,8 @@ CLI fallback (same model, BF16 on MPS): `python z_image_full_mps.py --device mps
 ```bash
 source zimage-env/bin/activate
 python caption_with_VLM_for_LORA.py \
-  /path/to/raw_photos \
-  /path/to/raw_photos_captioned \
+  /path/to/raw_photos_input \
+  /path/to/raw_photos_captioned_output \
   --model qwen3-vl-32b-instruct \
   --token "<your_trigger_token>" \
   --class-word "<class_word>"
@@ -50,7 +50,7 @@ python caption_with_VLM_for_LORA.py \
 General repo: <https://github.com/ostris/ai-toolkit> (MPS-specific notes: <https://github.com/ivanfioravanti/ai-toolkit/tree/main>).
 
 ```bash
-git clone https://github.com/ostris/ai-toolkit.git
+git clone https://github.com/ivanfioravanti/ai-toolkit.git
 cd ai-toolkit
 python3 -m venv venv
 source venv/bin/activate
