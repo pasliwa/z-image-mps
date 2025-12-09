@@ -30,6 +30,7 @@ CLI fallback (same model, BF16 on MPS): `python z_image_full_mps.py --device mps
 
 1) **Caption your images (copies + captions in one go)**
 
+Start LM Studio and load an appropriate VL model, e.g. qwen3-vl-32b-instruct. The script assumes it is available at: http://localhost:1234/v1.
 ```bash
 source zimage-env/bin/activate
 python caption_with_VLM_for_LORA.py \
